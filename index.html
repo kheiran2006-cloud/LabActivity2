@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Genshin Lantern Rite</title>
+  <meta name="description" content="A fan-made seasonal welcome page inspired by the Lantern Rite of Teyvat." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Genshin Lantern Rite" />
+  <meta property="og:description" content="A fan-made seasonal welcome page inspired by the Lantern Rite of Teyvat." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Genshin Lantern Rite" />
+  <meta name="twitter:description" content="A fan-made seasonal welcome page inspired by the Lantern Rite of Teyvat." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.g.com" crossorigin>
+  <link href="https://fonts.googleapis.comcss2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="rite-page noise min-h-screen" id="top">
+
+    <!-- ============ HEADER ============ -->
+    <header class="nav-shell" id="site-header">
+      <div class="nav-inner">
+        <a href="#top" class="brand-link" id="link-home">
+          <span class="brand-mark"><img id="brand-logo-img" class="brand-glyph-img" src="assetsation-emblems/mons.png" alt="Nation emblem"></span>
+          <span class="brand-tag">Genshin Impact</span>
+        </a>
+        <nav class="nav-desktop" aria-label="Primary navigation">
+          <a href="#story" class="nav-anchor">The story</a>
+          <a href="#world" class="nav-anchor">Explore Teyvat</a>
+          <a href="#journal" class="nav-anchor">Journal</a>
+          <a href="#download" class="nav-anchor">Platforms</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="btn-solid nav-play-desktop" id="button-nav-play">
+            Play now <svg class="icon-14" viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H7M17 7v10"/></svg>
+          </button>
+          <button type="button" class="btn-icon nav-toggle" id="button-mobile-menu" aria-label="Open navigation" aria-expanded="false">
+            <svg class="icon-18" id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="icon-18 hidden" id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="nav-mobile hidden" id="mobile-menu">
+        <nav class="nav-mobile-links" aria-label="Mobile navigation">
+          <a href="#story" class="nav-mobile-link mobile-close">The story</a>
+          <a href="#world" class="nav-mobile-link mobile-close">Explore Teyvat</a>
+          <a href="#journal" class="nav-mobile-link mobile-close">Journal</a>
+          <a href="#download" class="nav-mobile-link mobile-close">Platforms</a>
+          <button type="button" class="btn-solid nav-play-mobile" id="button-mobile-play">
+            Play now <svg class="icon-14" viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H7M17 7v10"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero" aria-labelledby="hero-title">
+        <img src="assets/img/xiao.png" alt="Genshin Impact Special Program artwork featuring characters beneath a red sky" class="hero-art" id="img-hero-lantern-rite" />
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
+        <div class="hero-lantern-deco" aria-hidden="true"><div class="lantern-float"></div></div>
+        <div class="hero-inner">
+          <div class="hero-copy" data-reveal>
+            <div class="eyebrow eyebrow-gold"><span class="rule-short"></span>A seasonal story from Liyue</div>
+            <h1 id="hero-title" class="hero-title">The night<br><em>remembers</em></h1>
+            <p class="hero-lede">Set a wish adrift, follow the glow, and find your way back to the harbor where every story begins again.</p>
+            <div class="hero-actions">
+              <button type="button" class="btn-solid btn-lg" id="button-hero-play">
+                Enter Teyvat
+                <span class="btn-arrow-box"><svg class="icon-13" viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H7M17 7v10"/></svg></span>
+              </button>
+              <a href="#story" class="link-ghost" id="link-hero-story">
+                Read the dispatch <svg class="icon-14" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7v10H7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-footline" data-reveal>
+            <div class="mono-label"><span class="text-gold">05</span> / 07 — LANTERN RITE FIELD NOTES</div>
+            <div class="hero-footline-copy">A quiet celebration at the edge of the sea. Bring a wish worth carrying.</div>
+            <a href="#story" aria-label="Scroll to the story" class="scroll-dot">
+              <svg class="icon-17" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7v10H7"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STORY ============ -->
+      <section id="story" class="section-story">
+        <div class="feature-grid">
+          <div data-reveal>
+            <div class="mono-label eyebrow-gold">01 / The dispatch</div>
+            <h2 class="chapter-mark section-heading">A wish is a small thing, until a city carries it.</h2>
+            <p class="section-copy">Once a year, Liyue Harbor turns its gaze skyward. The Rite is not a spectacle to watch from a distance—it is an invitation to leave a little light of your own in the sky.</p>
+            <a href="#journal" class="link-underline" id="link-story-journal">
+              Read the field journal <svg class="icon-14" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="feature-grid__items" data-reveal>
+            <article class="rite-feature">
+              <div class="rite-feature-top">
+                <span class="icon-box"><svg class="icon-18" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 17a2.5 2.5 0 0 0 2.5-2.5c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7.5 7.5 0 1 1-15 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+                
+              </div>
+              <h3 class="rite-feature-title">Follow the fire</h3>
+              <p class="rite-feature-copy">Trace a chain of lanterns through quiet streets, teahouses, and the rooftops above the harbor.</p>
+            </article>
+            <article class="rite-feature">
+              <div class="rite-feature-top">
+                <span class="icon-box"><svg class="icon-18" viewBox="0 0 24 24"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h2"/></svg></span>
+                
+              </div>
+              <h3 class="rite-feature-title">Make a promise</h3>
+              <p class="rite-feature-copy">A new chapter is waiting. Gather your companions and choose the wish that will guide your journey.</p>
+            </article>
+            <article class="rite-feature">
+              <div class="rite-feature-top">
+                <span class="icon-box"><svg class="icon-18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
+                
+              </div>
+              <h3 class="rite-feature-title">Lose the map</h3>
+              <p class="rite-feature-copy">Beyond Liyue, six nations hold their own kind of wonder. The road changes you when you stop rushing.</p>
+            </article>
+            <article class="rite-feature">
+              <div class="rite-feature-top">
+                <span class="icon-box"><svg class="icon-18" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg></span>
+                
+              </div>
+              <h3 class="rite-feature-title">Return changed</h3>
+              <p class="rite-feature-copy">Bring what you discover home. In Teyvat, even the smallest encounter leaves a mark.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WORLD ============ -->
+      <section id="world" class="section-world">
+        <div class="world-ring world-ring-a"></div>
+        <div class="world-ring world-ring-b"></div>
+        <div class="world-grid">
+          <div data-reveal>
+            <div class="mono-label eyebrow-jade">02 / The world beyond</div>
+            <h2 class="section-heading world-heading">Seven nations.<br><span class="text-gold">One sky.</span></h2>
+            <p class="section-copy">Start where the lanterns gather, then follow the wind. Every nation speaks in a different rhythm—stone, storm, song, frost, flame, and the unknown.</p>
+            <div class="world-open-world">
+              <svg class="icon-16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Open-world journey / 06 regions revealed</span>
+            </div>
+          </div>
+          <div class="world-panel" data-reveal>
+            <div class="world-panel-head">
+              <span>Region index</span><span>Teyvat Regional Intros</span>
+            </div>
+            <div id="nation-list"></div>
+            <div class="world-bearing">
+              <div class="world-bearing-top">
+                <div>
+                  <div class="mono-label eyebrow-gold" style="font-size:9px;">Current bearing</div>
+                  <div class="world-bearing-name" id="text-active-nation">Liyue</div>
+                </div>
+                <svg class="icon-22" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg>
+              </div>
+              <p class="world-bearing-desc" id="text-active-desc">A harbor of contracts, mountain paths, and lanterns that turn old promises into light.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ JOURNAL ============ -->
+      <section id="journal" class="section-journal">
+        <div class="journal-inner">
+          <div class="journal-head" data-reveal>
+            <div>
+              <div class="mono-label eyebrow-gold">03 / The journal</div>
+              <h2 class="section-heading journal-heading">Keep a little wonder.</h2>
+            </div>
+            <p class="journal-sub">Some latest discoveries from the world of Teyvat.</p>
+          </div>
+          <div class="media-grid" id="media-grid"></div>
+          <div class="journal-note" data-reveal>
+            <div class="mono-label eyebrow-jade" id="text-selected-eyebrow">Selected note / Cinematic preview</div>
+            <p class="journal-note-copy" id="text-selected-journal"></p>
+            <button type="button" class="link-gold" id="button-journal-enter">
+              Enter the story <svg class="icon-14" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ DOWNLOAD ============ -->
+      <section id="download" class="section-download">
+        <div class="download-ring download-ring-a"></div>
+        <div class="download-ring download-ring-b"></div>
+        <div class="download-inner" data-reveal>
+          <div>
+            <div class="mono-label download-label">The road is open</div>
+            <h2 class="download-heading">Your next chapter<br>starts at the harbor.</h2>
+            <p class="download-copy">Free to enter. A world to make your own. Choose your platform and keep the lantern burning.</p>
+          </div>
+          <div class="download-actions">
+            <button type="button" class="btn-dark" id="button-download-main">
+              Choose your platform <svg class="icon-16" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+            </button>
+            <div class="download-note">
+              <svg class="icon-14" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+              No purchase required to begin
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark footer-brand-mark"><span class="brand-glyph">璃</span></span>
+              <span class="footer-brand-name">Copyright Notice</span>
+            </div>
+            <p class="footer-desc">This material is provided strictly for educational, informational, and research purposes. All trademarks, logos, and brand names belong to their respective owners.</p>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/genshinimpact/" target="_blank" rel="noreferrer" aria-label="Instagram" class="btn-icon">
+                <svg class="icon-15" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@GenshinImpact" target="_blank" rel="noreferrer" aria-label="YouTube" class="btn-icon">
+                <svg class="icon-15" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+              </a>
+              <a href="https://www.hoyolab.com/circles/2/27/official" target="_blank" rel="noreferrer" aria-label="Community" class="btn-icon">
+                <svg class="icon-15" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3 class="mono-label eyebrow-gold">Navigate</h3>
+            <div class="footer-links">
+              <a href="#story">The story</a>
+              <a href="#world">Explore Teyvat</a>
+              <a href="#journal">Journal</a>
+              <a href="#download">Platforms</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3 class="mono-label eyebrow-gold">Keep wandering</h3>
+            <div class="footer-links">
+              <a href="#top">Back to top</a>
+              <a href="#world">Region index</a>
+              <a href="#journal">Field notes</a>
+              <a href="#download">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 / A fan-made tribute to Teyvat</span>
+          <span>Built for the joy of discovery</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ============ DOWNLOAD MODAL ============ -->
+  <div class="modal-backdrop hidden" id="modal-backdrop" role="presentation">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="download-title" id="dialog-platforms">
+      <button type="button" aria-label="Close platform choices" class="btn-icon modal-close" id="button-close-platforms">
+        <svg class="icon-16" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="mono-label eyebrow-gold">Begin your journey</div>
+      <h2 id="download-title" class="modal-title">Choose where<br>the lantern finds you.</h2>
+      <p class="modal-copy">Select a platform to prepare your invitation. You can change your path at any time.</p>
+      <div class="modal-platforms" id="modal-platforms"></div>
+      <p class="modal-status hidden" id="status-platform-ready"></p>
+    </div>
+  </div>
+
+  <script src="assets/src/script.js"></script>
+</body>
+</html>
